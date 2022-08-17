@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: white;
+    background: url(iintm.png) no-repeat center center/cover;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* HEAD */
+#main-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    background-color: black;
+}
+#logo{
+    padding: 7px;
+    margin: 27px;
+}
+#logo img{
+    height: 87px;
+    margin: -24px;
+}
+#main-head h1{
+    text-align: center;
+    font-size: 2.3rem;
+    color: #082369;
+    font-family: 'Dosis', sans-serif;
+}
+
+/* NAVIGATION BAR */
+#navbar{
+    background: rgb(99, 98, 98);
+    display: flex;
+    top: 0;
+    position: relative;
+    color: red;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(79, 79, 79);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Merriweather', serif;
+}
+#navbar ul li a:hover{
+    color: grey;
+    background-color: white;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* BODY */
+#home{
+    display: flex;
+    margin: 105px;
+    justify-content: center;
+    align-items: center;
+}
+/* #home::before{
+    height: 122%;
+    width: 100%;
+    background: url(iintm.png) no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.89;
+} */
+#home .box{
+    border: 2px solid #635d5d;
+    padding: 34px;
+    margin: 25px 6px;
+    border-radius: 42px;
+    background-color: white;
+    z-index: 2;
+    height: 330px;
+}
+.text{
+    font-family: 'Dosis', sans-serif;
+}
+.text h1{
+    font-size: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mtext{
+    padding: 22px;
+    margin: 36px
+}
+/* FOOTER */
+footer{
+     position: fixed;
+     padding: 10px 10px 0px 10px;
+     bottom: 0;
+    width: 100%; 
+     height: 34px;
+     background: black;
+
+}
+.foot{
+    text-align: center;
+    font-size: 0.8rem;
+    color: white;
+}

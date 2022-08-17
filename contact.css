@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    background-color: black;
+}
+#logo{
+    padding: 7px;
+    margin: 27px;
+}
+#logo img{
+    height: 87px;
+    margin: -24px;
+}
+#main-head h1{
+    text-align: center;
+    font-size: 2.3rem;
+    color: #082369;
+    font-family: 'Dosis', sans-serif;
+}
+
+/* NAVIGATION BAR */
+#navbar{
+    background: rgb(99, 98, 98);
+    display: flex;
+    top: 0;
+    position: relative;
+    color: red;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(79, 79, 79);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Merriweather', serif;
+}
+#navbar ul li a:hover{
+    color: grey;
+    background-color: white;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(iintm.png);
+    background-size: cover;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+    height: 255px;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact .content p{
+    font-weight: 300;
+    color: #fff;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+    position: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
